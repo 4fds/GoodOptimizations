@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.uhcm.goodopti.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "render.WorldRendererMixin",
+    "render.ChunkBuilderMixin",
+    "input.KeyboardHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

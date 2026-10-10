@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "goodopti",
+  "version": "${version}",
+  "name": "GoodOptimizations",
+  "description": "A performance optimization mod for every Minecraft 1.21.x version (1.21-1.21.11) that implements back-face chunk culling, keyboard input-lag reduction, and various rendering optimizations.",
+  "authors": [
+    "uhcm"
+  ],
+  "contact": {
+    "sources": "https://github.com/uhcm/GoodOptimizations"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.uhcm.goodopti.GoodOptimizations"
+    ]
+  },
+  "mixins": [
+    "goodopti.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft":    ">=1.21 <1.22",
+    "java":         ">=21",
+    "fabric-api":   "*"
+  }
+}
