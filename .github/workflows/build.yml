@@ -27,7 +27,9 @@ jobs:
           validate-wrappers: false
 
       - name: Compilar mod
-        run: ./gradlew build
+        run: |
+          chmod +x gradlew
+          ./gradlew build
 
       - name: Disponibilizar JAR
         uses: actions/upload-artifact@v4
